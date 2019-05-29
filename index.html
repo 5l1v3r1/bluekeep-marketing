@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BlueKeep Vulnerability</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/images/apple-touch-icon.png">
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/public/site.webmanifest">
+    <link rel="mask-icon" href="/public/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+<!--     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900,bold">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Permanent+Marker">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Gentium+Book+Basic"> -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/2.css" rel="stylesheet">
+    <link href="css/0.css" rel="stylesheet">
+    <link as="style" href="css/0.css" rel="preload">
+    <link as="style" href="css/2.css" rel="preload">
+    <link as="script" href="js/main.80d333e8ecb536afd6a3.js" rel="preload">
+    <link as="script" href="js/runtime.80d333e8ecb536afd6a3.js" rel="preload">
+    <link as="script" href="js/vendor.80d333e8ecb536afd6a3.js" rel="preload">
+    <style type="text/css">
+        a { color: #007bff; }
+        .btn-primary { background-color: : #007bff; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+            <div class="container"><a class="navbar-brand" href="#"><img src="public/images/logo_square.png" width="40" height="40"> <span class="navbar-brand-text">BlueKeep Vulnerability </span></a><button class="navbar-toggler order-0" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="far fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#attack">Vulnerability</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#researcher">Who found it?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" data-spy="scroll" data-target="#mainNav" data-offset="0">
+        <section class="container intro" id="attack">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="text-center"><img class="img-fluid pb-2" src="public/images/logo.png"></div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <h1>BlueKeep Vulnerability</h1>
+                    <p class="lead">Lock your Windows! Malicious actors can step right into your machine to wreak havoc on your system.</p>
+                    <p>Are you or your organization running systems with the Windows operating system with Remote Desktop Protocol (RDP) enabled? If so, you need to <strong>check your machines and ensure they've been patched</strong> with the latest Microsoft security updates. </p>
+
+                    <p>All <strong>security patches are important</strong> and should be applied, but this one is especially important. The BlueKeep vulnerability is <strong>"wormable"</strong>, meaning it can be <strong>spread rapidly and automatically</strong> amongst unprotected systems.</p>
+
+                    <p>This vulnerability can be <strong>exploited remotely and does not require any interaction</strong> to be successful.</p>
+                    <p>Make sure to <strong>get the latest updates</strong> for your operating system!</p>
+                    <div class="row">
+                        <div class="col-12 pb-2"><a href="https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2019-0708#ID0EGB"><button type="button" class="btn btn-primary btn-lg btn-block"><i class="fas fa-download fa-1x"></i> Get the Fix</button></a></div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-6 pr-1"><a href="https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2019-0708#ID0EGB" data-toggle="collapse"><button type="button" class="btn btn-secondary btn-lg btn-block"><i class="fas fa-quote-right fa-1x"></i> Do not wait</button></a></div>
+                        <div class="col-6 pl-1"><a href="https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2019-0708#ID0EGB"><button type="button" class="btn btn-secondary btn-lg btn-block"><i class="fas fa-flask fa-1x"></i> Be Responsible</button></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="researcher researcher-begin" id="researcher">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-5">Who discovered BlueKeep?</h1>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 join-1"><i class="fal fa-eye fa-5x color-tug"></i>
+                                <h1 class="display-4 mt-4">Initial Report</h1>
+                                <p class="text-center">BlueKeep was discovered and reported by:</p>
+                                <ul>
+                                    <li><a href="https://www.ncsc.gov.uk/" target="_blank">The UK's National Cyber Security Centre (NCSC)</a>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-6 join-2"><i class="fal fa-atom fa-5x color-tug"></i>
+                                <h1 class="display-4 mt-4">Solution Creator</h1>
+                                <p class="text-center">The organization who created the security fix:</p>
+                                <ul>
+                                    <li><a href="https://www.microsoft.com" target="_blank">Microsoft</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="demo demo-begin" id="demo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 offset-2 text-center">
+                        <h1 class="display-5">BlueKeep in Action</h1>
+                        <p>In the demo, McAffee shows how an attacker can <strong>send carefully crafted packets</strong> to a machine running a <strong>vulnerable version of Microsoft's Remote Desktop Protocol (RDP)</strong> in order gain <strong>unauthorized access</strong> to the system.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-8 offset-lg-2 video">
+                        <iframe width="700" height="400" src="https://www.youtube.com/embed/syF6rSM0JSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="display-5 text-center">Questions & Answers</h1>
+                        <div class="accordion" id="accordion"><button class="ff_faq_header btn btn-link" data-toggle="collapse" data-target="#ff_item_1" aria-expanded="true" aria-controls="ff_item_1">Am I affected by this vulnerability?</button>
+                            <div id="ff_item_1" class="collapse" data-parent="#accordion">
+                                <div class="ff_faq_item">
+                                    <p>If you operating system is Windows 7 or Windows Server 2008 and you are running Remote Desktop Protocol (RDP), most likely, yes.</p>
+                                </div>
+                            </div><button class="ff_faq_header btn btn-link" data-toggle="collapse" data-target="#ff_item_11" aria-expanded="true" aria-controls="ff_item_11">How do I know if I am running Remote Desktop Protocol?</button>
+                            <div id="ff_item_11" class="collapse" data-parent="#accordion">
+                                <div class="ff_faq_item">
+                                    <p>You can check your system configuration using the <a href="https://kc.mcafee.com/corporate/index?page=content&id=KB68446">following steps</a>.</p>
+                                </div>
+                            </div><button class="ff_faq_header btn btn-link collapsed" data-toggle="collapse" data-target="#ff_item_2" aria-expanded="true" aria-controls="ff_item_2">I can't patch my systems, what should I do?</button>
+                            <div id="ff_item_2" class="collapse" data-parent="#accordion">
+                                <div class="ff_faq_item">
+                                    <p>You can <a href="https://www.lifewire.com/disable-windows-remote-desktop-153337">disable remote desktop protocol</a>, block port "3389" at your network firewall or <a href="https://social.technet.microsoft.com/wiki/contents/articles/5490.configure-network-level-authentication-for-remote-desktop-services-connections.aspx">configure Network Level Authentication for RDP</a>.</p>
+                                </div>
+                            </div><button class="ff_faq_header btn btn-link collapsed" data-toggle="collapse" data-target="#ff_item_3" aria-expanded="true" aria-controls="ff_item_3">Can my antivirus detect or block attacks exploiting BlueKeep?</button>
+                            <div id="ff_item_3" class="collapse" data-parent="#accordion">
+                                <div class="ff_faq_item">
+                                    <p>This will depend on the anti-virus solution and configuration. However, it's best to just apply the security patch.</p>
+                                </div>
+                            </div><button class="ff_faq_header btn btn-link collapsed" data-toggle="collapse" data-target="#ff_item_4" aria-expanded="true" aria-controls="ff_item_4">Is there a fix for this vulnerability?</button>
+                            <div id="ff_item_4" class="collapse" data-parent="#accordion">
+                                <div class="ff_faq_item">
+                                    <p>Yes, Microsoft released a patch in May 2019. You can <a href="https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2019-0708#ID0EGB">download it here</a>.</p>
+                                </div>
+                            </div><button class="ff_faq_header btn btn-link collapsed" data-toggle="collapse" data-target="#ff_item_5" aria-expanded="true" aria-controls="ff_item_5">Has this been abused in the wild?</button>
+                            <div id="ff_item_5" class="collapse" data-parent="#accordion">
+                                <div class="ff_faq_item">
+                                    <p>We don't know.</p>
+                                </div>
+                            </div><button class="ff_faq_header btn btn-link collapsed" data-toggle="collapse" data-target="#ff_item_17" aria-expanded="true" aria-controls="ff_item_17">What's the impact of this vulnerability?</button>
+                            <div id="ff_item_17" class="collapse" data-parent="#accordion">
+                                <div class="ff_faq_item">
+                                    <p>BlueKeep is a "wormable" vulnerability meaning it can be spread rapidly and automatically amongst unprotected systems. These types of flaws are especially bad and have been recently abused in public attacks like <a href="https://securityboulevard.com/2019/05/eternalblue-worm-still-claiming-victims-two-years-after-wannacry-and-notpetya/">WannaCry</a>.</p>
+                                </div>
+                            </div>
+                            <button class="ff_faq_header btn btn-link collapsed" data-toggle="collapse" data-target="#ff_item_7" aria-expanded="true" aria-controls="ff_item_7">How many systems could be at risk?</button>
+                            <div id="ff_item_7" class="collapse" data-parent="#accordion">
+                                <div class="ff_faq_item">
+                                    <p>It's not entirely clear, but <a href="https://www.zdnet.com/article/almost-one-million-windows-systems-vulnerable-to-bluekeep-cve-2019-0708/">news articles</a> estimate it could be more than 7 million systems.</p>
+                                </div>
+                            </div><button class="ff_faq_header btn btn-link collapsed" data-toggle="collapse" data-target="#ff_item_8" aria-expanded="true" aria-controls="ff_item_8">Which systems are affected by these issues?</button>
+                            <div id="ff_item_8" class="collapse" data-parent="#accordion">
+                                <div class="ff_faq_item">
+                                    <p>Windows 7 for 32-bit Systems Service Pack 1</p>
+                                    <p>Windows 7 for x64-based Systems Service Pack 1</p>
+                                    <p>Windows Server 2008 for 32-bit Systems Service Pack 2</p>
+                                    <p>Windows Server 2008 for 32-bit Systems Service Pack 2 (Server Core installation)</p>
+                                    <p>Windows Server 2008 for Itanium-Based Systems Service Pack 2</p>
+                                    <p>Windows Server 2008 for x64-based Systems Service Pack 2</p>
+                                    <p>Windows Server 2008 for x64-based Systems Service Pack 2 (Server Core installation)</p>
+                                    <p>Windows Server 2008 R2 for Itanium-Based Systems Service Pack 1</p>
+                                    <p>Windows Server 2008 R2 for x64-based Systems Service Pack 1</p>
+                                    <p>Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)</p>
+                                </div>
+                            </div><button class="ff_faq_header btn btn-link collapsed" data-toggle="collapse" data-target="#ff_item_9" aria-expanded="true" aria-controls="ff_item_9">What is CVE-2019-0708?</button>
+                            <div id="ff_item_9" class="collapse" data-parent="#accordion">
+                                <div class="ff_faq_item">
+                                    <p>CVE-2019-0708 is the official reference to the BlueKeep vulnerability. <abbr title="Common Vulnerabilities and Exposures">CVE</abbr> is the Standard for Information Security Vulnerability Names maintained by MITRE.</p>
+                                </div>
+                            </div><button class="ff_faq_header btn btn-link collapsed" data-toggle="collapse" data-target="#ff_item_11" aria-expanded="true" aria-controls="ff_item_11">Is there proof-of-concept code?</button>
+                            <div id="ff_item_11" class="collapse" data-parent="#accordion">
+                                <div class="ff_faq_item">Kind of. Several anti-virus vendors have managed to create a successful exploit of the vulnerability, but not code has been published publicly.</div>
+                            </div><button class="ff_faq_header btn btn-link collapsed" data-toggle="collapse" data-target="#ff_item_11" aria-expanded="true" aria-controls="ff_item_11">Why the name BlueKeep?</button>
+                            <div id="ff_item_11" class="collapse" data-parent="#accordion">
+                                <div class="ff_faq_item"><a href="https://twitter.com/GossiTheDog/status/1128431661266415616">Kevin Beaumont</a> named the vulnerability, inspired by Game of Thrones. More importantly, BlueKeep serves as an easy way to communicate about the vulnerability.</div>
+                            </div><button class="ff_faq_header btn btn-link collapsed" data-toggle="collapse" data-target="#ff_item_11" aria-expanded="true" aria-controls="ff_item_11">Can I contribute to the website?</button>
+                            <div id="ff_item_11" class="collapse" data-parent="#accordion">
+                                <div class="ff_faq_item">Yes! If you want to suggest a change, issue a pull request here.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="acknowledgements" id="acknowledgements">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Acknowledgments</h2>
+                        <p><a class="company" target="_blank" href="https://www.ncsc.gov.uk/">National Cyber Security Centre (NCSC)</a> for working with Microsoft to report the vulnerability.</p>
+                        <p><a class="company" target="_blank" href="https://www.microsoft.com/">Microsoft</a> for issuing a patch for the vulnerability.</p>
+                        <p><a class="company" target="_blank" href="https://www.mcafee.com/">McAfee</a> for creating a video demonstration of a successful simulated attack.</p>
+                        <p><a href="https://www.tugraz.at/home/">Graz University of Technology</a> for continuing the trend of marketing vulnerabilities and providing a clean template.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer container">
+            <p class="float-right"><a href="#"><i class="fas fa-arrow-to-top"></i></a></p>
+            <p><i class="far fa-copyright"></i>This website is brought to you by <a href="https://www.twitter.com/9bplus">Brandon Dixon</a> and copied from <a href="https://www.tugraz.at/home/">Graz University of Technology</a>. A modest test in <a href="https://medium.com/@9bplus/why-i-love-marketing-vulnerabilities-91b6beaf5368">marketing vulnerabilities</a>.</p>
+        </footer>
+    </main>
+    <script src="js/runtime.80d333e8ecb536afd6a3.js"></script>
+    <script src="js/vendor.80d333e8ecb536afd6a3.js"></script>
+    <script src="js/main.80d333e8ecb536afd6a3.js"></script>
+</body>
+
+</html>
